@@ -1,3 +1,14 @@
-.pytest_cache
+# Project
+__pycache__/
+*.py[cod]
+
+# Intellij
+./idea
+
+# System
+*.DS_Store
+
+# Logs and reports
 *.log
 *.html
+
