@@ -54,7 +54,7 @@ class TestHomePage(BaseTest):
             assert False
 
     @pytest.mark.regression
-    def search_with_navbar(self):
+    def test_search_with_navbar(self):
         self.driver.back()
         self.home.hover_nav_category(self)
         time.sleep(2)

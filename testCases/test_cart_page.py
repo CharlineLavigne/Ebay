@@ -26,7 +26,7 @@ class TestEbayCart(BaseTest):
 
     @pytest.mark.sanity
     @pytest.mark.parametrize("quantity_selected", ["2", "3"])
-    def modify_quantity_product_cart(self, quantity_selected, remove_items_shopping_cart):
+    def test_modify_quantity_product_cart(self, quantity_selected, remove_items_shopping_cart):
         try:
             if quantity_selected == "2":
                 self.base.open_page(self, os.getenv("BASE_URL"))
